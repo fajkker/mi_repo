@@ -230,6 +230,13 @@ body {
 }
 
 @media (min-width: 260px) {
+    body {
+        background-image: url('../images/fondo.jpg');
+        background-repeat: repeat;
+        background-attachment: fixed;
+        opacity: 0.8;
+    }
+
     header .logo {
         flex-direction: column;
         align-items: center;
