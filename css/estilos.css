@@ -233,7 +233,7 @@ body {
     body {
         background-image: url('../images/fondo.jpg');
         background-repeat: repeat;
-        background-attachment: fixed;
+        background-attachment: scroll;
         opacity: 0.8;
     }
 
