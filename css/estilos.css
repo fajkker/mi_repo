@@ -57,39 +57,28 @@ header nav a:hover {
 }
 
 #cuerpo {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 2rem;
     padding-bottom: 20%;
 }
 
-.izquierda {
-    display: grid;
-    background: #76d5f5;
-    background: linear-gradient(#76d5f5, #76d5a0);
-    height: 50vh;
-    width: 50%;
-    text-align: center;
-    opacity: 0.9;
-    border-radius: 10%;
+main {
+    width: 90%;
+    margin: auto;
 }
 
 .izquierda2 {
     background: #76d5f5;
-    height: 35vh;
-    width: 50%;
-    text-align: center;
-    opacity: 0.9;
+    background: linear-gradient(#76d5f5, #76d5a0);
     border-radius: 10%;
-    margin-right: 100px;
 }
 
 .derecha {
     background: url(../images/Capture.PNG);
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 50vh;
-    opacity: 0.7;
-    border-radius: 10%;
+   
 }
 
 h1 {
@@ -246,28 +235,21 @@ body {
     }
 
     #cuerpo {
+        display: grid;
+        opacity: 0.8;
         padding-bottom: 20%;
-        font-size: 1%;        
     }
 
     .izquierda {
         background: #76d5f5;
         background: linear-gradient(#76d5f5, #76d5a0);
-        height: 45vh;
-        text-align: left;
-        flex-direction: column;
-        align-items: center;
+        border-radius: 10%;
     }
 
     .izquierda2 {
-        display: flex;
-        flex-direction: column;
-        height: 50vh;
-        width: 50%;
-        text-align: center;
-        opacity: 0.6;
+        background: #76d5f5;
+        background: linear-gradient(#76d5f5, #76d5a0);
         border-radius: 10%;
-        margin-right: auto;
     }
 
     .video {
@@ -289,13 +271,14 @@ body {
 
     button {
         height: 45px;
-        margin-left: 30%; 
+        margin-left: 40%; 
         text-transform: none;  
         width: 100px;
     }
 
     .derecha {
         height: 45vh;
+        border-radius: 10%;
     }
 
     .container__footer{
@@ -320,7 +303,6 @@ body {
         padding-left: 30px;
     }
 
-}
 
 @media (min-width: 768px) {
     header .logo {
@@ -340,26 +322,17 @@ body {
     }
 
     #cuerpo {
-        padding-bottom: 20%;
-        font-size: 1%;        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+        gap: 2rem;
+        opacity: 0.8;
     }
 
     .izquierda {
         background: #76d5f5;
         background: linear-gradient(#76d5f5, #76d5a0);
-        height: 50vh;
-        text-align: left;
-    }
-
-    .izquierda2 {
-        display: flex;
-        flex-direction: column;
-        height: 50vh;
-        width: 50%;
-        text-align: center;
-        opacity: 0.6;
         border-radius: 10%;
-        margin-right: auto;
     }
 
     .video {
@@ -416,5 +389,6 @@ body {
     .imga1 {
         margin-left: 35%;
     }
-
+    
+  }
 }
