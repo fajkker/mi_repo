@@ -143,6 +143,16 @@ button {
     padding-left: 150px;
 }
 
+.hijo {
+    filter: brightness(0.8);
+    transition: all 2s;
+}
+
+.hijo:hover {
+    filter: brightness(1);
+    transform: scale(1.2);
+}
+
 .textarea {
     width: 75%;
     height: 200px;
