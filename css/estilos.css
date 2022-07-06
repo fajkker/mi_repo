@@ -38,6 +38,17 @@ header nav ul {
     padding: 30px;
 }
 
+#navegador {
+    font-size: 15px;
+    padding: 15px;
+}
+
+#navegador:hover {
+    background:#2e5050;
+    color: rgb(255, 255, 255);
+    opacity: 0.2;
+}
+
 header nav a {
     display: inline-block;
     color: rgb(255, 255, 255);
@@ -54,6 +65,7 @@ header nav a {
 
 header nav a:hover {
     background:#2e5050;
+    color: rgb(255, 255, 255);
 }
 
 #cuerpo {
@@ -74,21 +86,13 @@ main {
     border-radius: 10%;
 }
 
-.derecha {
-    background: url(../images/Capture.PNG);
-    background-size: cover;
-    background-position: center;
-   
-}
 
-h1 {
-    font-size: 30px;
-    text-decoration: underline;
-    width: 50%;
-    margin: auto;
-    margin-bottom: 40px;
-    text-align: center;
+h3 {
+    padding-left: 40%;
     color: #7a7a7a;
+    background-color: #76d5f5;
+    padding: 30px;
+    opacity: 0.7;
 }
 
 p {
@@ -111,22 +115,6 @@ p {
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 15%;
-    color: white;
-}
-
-button {
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    background-color: #acccce; 
-    border-color:#acccce; 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 220px;   
-    cursor: pointer;
     color: white;
 }
 
@@ -188,6 +176,7 @@ footer{
 }
 
 .box__footer a{
+    text-decoration: none;
     margin-top: 10px;
     color:#7a7a7a;
     font-weight: 60;
@@ -250,12 +239,6 @@ body {
         padding-bottom: 20%;
     }
 
-    .izquierda {
-        background: #76d5f5;
-        background: linear-gradient(#76d5f5, #76d5a0);
-        border-radius: 10%;
-    }
-
     .izquierda2 {
         background: #76d5f5;
         background: linear-gradient(#76d5f5, #76d5a0);
@@ -267,9 +250,11 @@ body {
         height: 150px;
     }
 
-    h1 {
-        font-size: 20px;
-        margin-bottom:7px;
+    h3 {
+        color: white;
+        padding-left: 40%;
+        font-size: 10px;
+        padding-left: 27%;
     }
     
 
@@ -277,13 +262,6 @@ body {
         font-size: 15px;
         line-height: 20px;
         width: 75%;
-    }
-
-    button {
-        height: 45px;
-        margin-left: 40%; 
-        text-transform: none;  
-        width: 100px;
     }
 
     .derecha {
@@ -351,9 +329,12 @@ body {
         margin-right: 2%;
     }
 
-    h1 {
-        font-size: 20px;
+    h3 {
+        color: white;
+        font-size: 200px;
         margin-bottom:15px;
+        margin: auto;
+        padding-left: 40%;
     }
     
 
@@ -361,13 +342,6 @@ body {
         font-size: 18px;
         line-height: 25px;
         width: 75%;
-    }
-
-    button {
-        display: flex;
-        height: 45px;
-        margin-left: 40%; 
-        text-transform: none;
     }
 
     .derecha {

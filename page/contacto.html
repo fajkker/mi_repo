@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doggies - Contacto</title>
+    <title>Doggies</title>
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <p class="logo">Doggies</p>
-       <nav>
-       <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="comprar.html">Comprar</a></li>
-       </ul>
-       </nav>
-  </header>
-        <br>
-        
-        <h1>Formulario de contacto</h1>
-        <p>
-            <label for="nombre" class="image">Nombre:</label> <br>
-            <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre">
-        </p>
-        <p>
-            <label for="email" class="image">Email:</label><br>
-            <input type="email" name="introducir_email" id="email" placeholder="Escribe tu Email">
-        </p>
-      
-        <p>
-            <label for="telefone" class="image">Teléfono:</label> <br>
-              <input type="tel" name="introducir_telefono" placeholder="Escribe tu teléfono">
-        </p>
-        
-        <p>
-            <label for="asunto" class="image">Asunto:</label> <br>
-              <input type="text" name="introducir_asunto" placeholder="Escribe un asunto">
-        </p>    
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="servicios.html" id="navegador">Servicios</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="nosotros.html" id="navegador">Nosotros</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="comprar.html" id="navegador">Comprar</a></li>
+                        <hr class="dropdown-divider">
+                        <li><a class="dropdown-item" href="contacto.html" id="navegador">Contactanos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br>
 
-        <p>
-            <label for="mensaje" class="image">Mensaje:</label> <br>              
-            <textarea name="introducir_mensaje" class="textarea" placeholder="Deja aquí tu comentario..."></textarea> 
-        </p> 
-        
-        <p>         
-            <button type="submit" name="enviar_formulario"><p>Enviar</p></button>
-        </p>
-      
+    <h3>Formulario de contacto</h3>
+    <p>
+        <label for="nombre" class="image">Nombre:</label>
+        <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre">
+    </p>
+    <p>
+        <label for="email" class="image">Email:</label>
+        <input type="email" name="introducir_email" id="email" placeholder="Escribe tu Email">
+    </p>
+
+    <p>
+        <label for="telefone" class="image">Teléfono:</label>
+        <input type="tel" name="introducir_telefono" placeholder="Escribe tu teléfono">
+    </p>
+
+    <p>
+        <label for="asunto" class="image">Asunto:</label>
+        <input type="text" name="introducir_asunto" placeholder="Escribe un asunto">
+    </p>
+
+    <p>
+        <label for="mensaje" class="image">Mensaje:</label>
+        <textarea name="introducir_mensaje" class="textarea" placeholder="Deja aquí tu comentario..."></textarea>
+    </p>
+
+    <p>
+        <button type="submit" name="enviar_formulario" class="btn btn-info">
+            Enviar
+        </button>
+    </p>
+
     </form>
-</div>  
-</div>
+    </div>
+    </div>
 
     <footer>
         <div class="container__footer">
@@ -69,21 +92,22 @@
                 <a href="comprar.html">Productos</a>
                 <a href="servicios.html">Servicios</a>
             </div>
-            
+
             <div class="box__footer">
                 <h2>Redes Sociales</h2>
-                <a href="#"><i class="fa-brands fa-facebook-square"></i>  Facebook</a>
-                <a href="#"><i class="fa-brands fa-twitter-square"></i>  Twitter</a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i>  Linkedin</a>
-                <a href="#"><i class="fa-brands fa-instagram-square"></i></i>  Instagram</a>
+                <a href="#"><i class="fa-brands fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fa-brands fa-instagram-square"></i></i> Instagram</a>
             </div>
         </div>
 
-       <div class="box__copyright">
+        <div class="box__copyright">
             <hr>
             <p>Todos los derechos reservados © 2022
-            <b>Federico Paradelo</b></p>
+                <b>Federico Paradelo</b>
+            </p>
         </div>
     </footer>
 </body>
+
 </html>
