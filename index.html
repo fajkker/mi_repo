@@ -19,26 +19,42 @@
 <body>
     <header>
         <p class="logo">Doggies</p>
-        <nav>
-            <ul>
-                <li><a id="hide" href="index.html">Home</a></li>
-                <li><a id="hide" href="page/contacto.html">Contactanos</a></li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Menu
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="page/servicios.html" id="navegador">Servicios</a></li>
-                        <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="page/nosotros.html" id="navegador">Nosotros</a></li>
-                        <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="page/comprar.html" id="navegador">Comprar</a></li>
-                        <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="page/contacto.html" id="navegador">Contactanos</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="navbar-toggler" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-toggler" href="page/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-toggler" href="page/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-toggler" href="page/comprar.html">Comprar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item" href="page/contacto.html">Contactanos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
     <br>
@@ -91,8 +107,8 @@
         <div class="container__footer">
             <div class="box__footer">
                 <h2>Acerca de</h2>
-                <a href="nosotros.html">Quienes Somos</a>
-                <a href="contacto.html">Contactanos</a>
+                <a href="page/nosotros.html">Quienes Somos</a>
+                <a href="page/contacto.html">Contactanos</a>
             </div>
 
             <div class="box__footer">

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doggies</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -19,44 +19,63 @@
 <body>
     <header>
         <p class="logo">Doggies</p>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="contacto.html">Contactanos</a></li>
-                <li class="nav-item dropdown">
-                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Menu
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="servicios.html" id="navegador">Servicios</a></li>
-                        <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="nosotros.html" id="navegador">Nosotros</a></li>
-                        <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="comprar.html" id="navegador">Comprar</a></li>
-                        <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="contacto.html" id="navegador">Contactanos</a></li>
-                    </ul>
-                </li>
-            </ul>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="navbar-toggler" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-toggler" href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-toggler" href="nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-toggler" href="comprar.html">Comprar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-item" href="contacto.html">Contactanos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-        <br>
-    <main>
-    <section id="cuerpo">
-            <div class="izquierda2">
-            <h4>Sobre Nosotros</h4>
-            <p> Somos una empresa dedicada al transporte responsable de mascotas,
-                Desde 20XX trabajamos en el traslado, ofreciendo al usuario a llenar un pequeño 
-                formulario, en el cual, va a poder conseguir el chofer adecuado, o bien elegirlo.
-                 </p>
-            <br>
-            </div>
-            <iframe width="440" height="315" src="https://www.youtube.com/embed/GrV5A54L6-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section> 
     <br>
+    <main>
+        <section id="cuerpo">
+            <div class="izquierda2">
+                <h4>Sobre Nosotros</h4>
+                <p> Somos una empresa dedicada al transporte responsable de mascotas,
+                    Desde 20XX trabajamos en el traslado, ofreciendo al usuario a llenar un pequeño
+                    formulario, en el cual, va a poder conseguir el chofer adecuado, o bien elegirlo.
+                </p>
+                <br>
+            </div>
+            <iframe width="440" height="315" src="https://www.youtube.com/embed/GrV5A54L6-A"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <br>
     </main>
-    
+
     <footer>
         <div class="container__footer">
             <div class="box__footer">
@@ -71,21 +90,23 @@
                 <a href="comprar.html">Productos</a>
                 <a href="servicios.html">Servicios</a>
             </div>
-            
+
             <div class="box__footer">
                 <h2>Redes Sociales</h2>
-                <a href="#"><i class="fa-brands fa-facebook-square"></i>  Facebook</a>
-                <a href="#"><i class="fa-brands fa-twitter-square"></i>  Twitter</a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i>  Linkedin</a>
-                <a href="#"><i class="fa-brands fa-instagram-square"></i></i>  Instagram</a>
+                <a href="#"><i class="fa-brands fa-facebook-square"></i> Facebook</a>
+                <a href="#"><i class="fa-brands fa-twitter-square"></i> Twitter</a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                <a href="#"><i class="fa-brands fa-instagram-square"></i></i> Instagram</a>
             </div>
         </div>
 
         <div class="box__copyright">
             <hr>
             <p>Todos los derechos reservados © 2022
-            <b>Federico Paradelo</b></p>
+                <b>Federico Paradelo</b>
+            </p>
         </div>
     </footer>
 </body>
+
 </html>
