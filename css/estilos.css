@@ -4,6 +4,13 @@
   font-family: "Nunito", sans-serif;
 }
 
+body {
+  background-image: url("../images/fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.8;
+}
+
 header {
   display: flex;
   padding: 30px;
@@ -173,13 +180,6 @@ box__copyright {
   border: none;
   height: 1px;
   background-color: #7a7a7a;
-}
-
-body {
-  background-image: url("../images/fondo.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  opacity: 0.8;
 }
 
 @media (min-width: 260px) {
