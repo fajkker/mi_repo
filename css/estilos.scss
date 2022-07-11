@@ -1,0 +1,367 @@
+@import "variables";
+
+*{
+    margin:0; 
+    padding:0;
+    font-family: $letraPrincipal;
+}
+
+header {
+    display: flex;
+    padding: 30px;
+    background: $colorClaro;
+    margin-bottom: 30px;
+
+    #logo {
+    font-family: $letraPrincipal;
+    color: $colorBlanco;
+    font-size: 50px;
+    line-height: 150px;
+    display: flex;
+    flex-direction: row;
+    }
+
+    nav ul {
+        font-family: $letraPrincipal;
+        color: $colorBlanco;
+        font-size: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        color: $colorBlanco;
+        text-decoration: none;
+        font-weight:bold;
+    }
+
+    nav a:hover {
+        background: $colorClaro;
+        color: $colorBlanco;
+    }
+}
+
+#cuerpo {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    padding-bottom: 20%;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+
+h3 {
+    padding-left: 40%;
+    background-color: #76d5f5;
+    padding: 30px;
+    opacity: 0.7;
+}
+
+h4 {
+    padding-left: 30%;
+    color: #7a7a7a;
+    margin: auto;
+    padding: auto;
+    opacity: 0.7;
+}
+
+p {
+    font-weight: bolder;
+    font-size: 19px;
+    line-height: 30px;
+    width: 50%;
+    margin: auto;
+}
+
+.contenido p {
+    margin-bottom: 1em;
+}
+
+.imga1 {
+    display: inline-block;
+    text-align: center;
+    float: none;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+    color: white;
+}
+
+.image {
+    width: 100%;
+    color: white;
+    align-content: center;
+}
+
+.padre {
+    display: grid;
+    grid-template-columns: repeat(4, 5fr);
+    grid-template-rows: repeat(4, 100px);
+    padding-left: 150px;
+}
+
+.hijo {
+    filter: brightness(0.8);
+    transition: all 2s;
+}
+
+.hijo:hover {
+    filter: brightness(1);
+    transform: scale(1.2);
+}
+
+.textarea {
+    width: 75%;
+    height: 200px;
+}
+
+
+footer{
+    width: 100%;
+    padding: 30px 0px;
+    background-image: url(../images/background-footer.svg);
+    background-size: cover;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
+
+.box__footer a{
+    text-decoration: none;
+    margin-top: 10px;
+    color:#7a7a7a;
+    font-weight: 60;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+    margin-top: 20px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+    text-align: center;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+body {
+    background-image: url('../images/fondo.jpg');
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+
+@media (min-width: 260px) {
+    
+    header .logo {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #cuerpo {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        opacity: 0.8;
+        padding-bottom: 20%;
+    }
+
+    .izquierda2 {
+        background: #76d5f5;
+        background: linear-gradient(#76d5f5, #76d5a0);
+        border-radius: 10%;
+    }
+
+    .video {
+        width: 260px;
+        height: 150px;
+    }
+
+    h3 {
+        color: white;
+        padding-left: 40%;
+        font-size: 10px;
+        padding-left: 27%;
+    }
+    
+    h4 {
+        color: #7a7a7a;
+        margin: auto;
+        padding: auto;
+        opacity: 0.7;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 20px;
+        width: 75%;
+    }
+
+    .derecha {
+        height: 45vh;
+        border-radius: 10%;
+    }
+
+    .container__footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box__footer{
+        align-items: center;
+    }
+
+    .textarea {
+        width: 75%;
+        height: 100px;
+    }
+
+    .padre {
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: repeat(3, 100px);
+        padding-left: 30px;
+    }
+
+
+@media (min-width: 768px) {
+    header .logo {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10%;
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #cuerpo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+        gap: 2rem;
+        opacity: 0.8;
+    }
+
+    .izquierda {
+        background: #76d5f5;
+        background: linear-gradient(#76d5f5, #76d5a0);
+        border-radius: 10%;
+    }
+
+    .video {
+        width: 510px;
+        height: 250px;
+        margin-right: 2%;
+    }
+
+    h3 {
+        color: white;
+        font-size: 200px;
+        margin-bottom:15px;
+        margin: auto;
+        padding-left: 40%;
+    }
+
+    h4 {
+        color: #7a7a7a;
+        margin: auto;
+        padding: auto;
+        opacity: 0.7;
+    }
+    
+
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        width: 75%;
+    }
+
+    .derecha {
+        height: 50vh;
+    }
+
+    .container__footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .box__footer{
+        align-items: center;
+    }
+
+    .textarea {
+        width: 75%;
+        height: 100px;
+    }
+
+    .padre {
+        display: grid;
+        grid-template-columns: repeat(4, 3fr);
+        grid-template-rows: repeat(4, 100px);
+        padding-left: 30px;
+    }
+
+    .imga1 {
+        margin-left: 35%;
+    }
+    
+  }
+}
