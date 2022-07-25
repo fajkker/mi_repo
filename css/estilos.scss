@@ -118,11 +118,11 @@ p {
 .hijo {
     filter: brightness(0.8);
     transition: all 2s;
-}
 
-.hijo:hover {
-    filter: brightness(1);
-    transform: scale(1.2);
+    &:hover {
+        filter: brightness(1);
+        transform: scale(1.2);
+    }
 }
 
 .textarea {
@@ -151,23 +151,23 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 40px;
-}
 
-.box__footer h2{
-    margin-bottom: 30px;
-    color: #343434;
-    font-weight: 700;
-}
+    h2 {
+        margin-bottom: 30px;
+        color: $colorFooter
+    }
 
-.box__footer a{
-    text-decoration: none;
-    margin-top: 10px;
-    color:#7a7a7a;
-    font-weight: 60;
-}
+    a {
+        text-decoration: none;
+        margin-top: 10px;
+        color: #7a7a7a;
+        font-weight: 60;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 
-.box__footer a:hover{
-    opacity: 0.8;
+
 }
 
 box__copyright{
@@ -176,6 +176,12 @@ box__copyright{
     text-align: center;
     padding: 0px 40px;
     margin-top: 20px;
+
+    p {
+        margin-top: 20px;
+        color: #7a7a7a;
+        text-align: center;
+    }
 }
 
 .box__copyright p{
