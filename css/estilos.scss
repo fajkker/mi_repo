@@ -418,9 +418,9 @@ box__copyright{
     .padre {
         display: grid;
         grid-template-columns: repeat(3, 3fr);
-        grid-template-rows: repeat(3, 300px);
+        grid-template-rows: repeat(3, 100px);
         padding-left: 100px;
-      }
+    }
 
     .imga1 {
         margin-left: 35%;
