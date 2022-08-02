@@ -102,32 +102,86 @@ p {
     color: white;
 }
 
-.image {
+.form-registro {
+    width: 400px;
+    background: $colorClaro;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+
+    h5 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    p {
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .buttom {
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+}
+
+.formulario {
+    width: 100%;
+    background: $colorBlanco;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 1px solid $colorBlanco;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+
+
+
+/* .image {
     width: 100%;
     color: white;
     align-content: center;
-}
+} */
 
 .padre {
     display: grid;
-    grid-template-columns: repeat(4, 5fr);
-    grid-template-rows: repeat(4, 100px);
-    padding-left: 150px;
-}
+    grid-template-columns: repeat(3, 5fr);
+    grid-template-rows: repeat(3, 200px);
+    padding-left: 100px;
+  }
 
 .hijo {
-    filter: brightness(0.8);
+    filter: grayscale(1);
     transition: all 2s;
+}
 
-    &:hover {
-        filter: brightness(1);
-        transform: scale(1.2);
-    }
+.hijo:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
 }
 
 .textarea {
     width: 75%;
-    height: 200px;
+    height: 100px;
+    background: $colorBlanco;
+    padding: 30px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    border: 2px solid $colorBlanco;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
 }
 
 
@@ -151,23 +205,23 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 40px;
+}
 
-    h2 {
-        margin-bottom: 30px;
-        color: $colorFooter
-    }
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+}
 
-    a {
-        text-decoration: none;
-        margin-top: 10px;
-        color: #7a7a7a;
-        font-weight: 60;
-        &:hover {
-            opacity: 0.8;
-        }
-    }
+.box__footer a{
+    text-decoration: none;
+    margin-top: 10px;
+    color:#7a7a7a;
+    font-weight: 60;
+}
 
-
+.box__footer a:hover{
+    opacity: 0.8;
 }
 
 box__copyright{
@@ -176,12 +230,6 @@ box__copyright{
     text-align: center;
     padding: 0px 40px;
     margin-top: 20px;
-
-    p {
-        margin-top: 20px;
-        color: #7a7a7a;
-        text-align: center;
-    }
 }
 
 .box__copyright p{
@@ -275,7 +323,7 @@ box__copyright{
     .padre {
         display: grid;
         grid-template-columns: repeat(3, 3fr);
-        grid-template-rows: repeat(3, 100px);
+        grid-template-rows: repeat(3, 200px);
         padding-left: 30px;
     }
 
@@ -357,13 +405,12 @@ box__copyright{
         width: 75%;
         height: 100px;
     }
-
     .padre {
         display: grid;
-        grid-template-columns: repeat(4, 3fr);
-        grid-template-rows: repeat(4, 100px);
-        padding-left: 30px;
-    }
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: repeat(3, 300px);
+        padding-left: 100px;
+      }
 
     .imga1 {
         margin-left: 35%;
