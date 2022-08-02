@@ -96,7 +96,6 @@ p {
 }
 
 .form-registro {
-  width: 400px;
   background: #acccce;
   padding: 30px;
   margin: auto;
@@ -230,6 +229,12 @@ box__copyright {
 }
 
 @media (min-width: 260px) {
+  body {
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.8;
+  }
   header .logo {
     display: flex;
     flex-direction: row;
@@ -299,6 +304,12 @@ box__copyright {
   }
 }
 @media (min-width: 260px) and (min-width: 768px) {
+  body {
+    background-image: url("../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.8;
+  }
   header .logo {
     display: flex;
     flex-direction: row;

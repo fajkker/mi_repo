@@ -244,7 +244,12 @@ box__copyright{
 }
 
 @media (min-width: 260px) {
-    
+    body {
+        background-image: url("../images/fondo.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 0.8;
+      }
     header .logo {
         display: flex;
         flex-direction: row;
@@ -328,6 +333,12 @@ box__copyright{
 
 
 @media (min-width: 768px) {
+    body {
+        background-image: url("../images/fondo.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        opacity: 0.8;
+      }
     header .logo {
         display: flex;
         flex-direction: row;
